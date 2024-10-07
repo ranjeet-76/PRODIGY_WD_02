@@ -1,0 +1,123 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #81c3d7, #a7e9ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.watch-container {
+  /* background-color: #ffffff; */
+  background: linear-gradient(136deg,#ff6f91,#ff9671,#ffc75f);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+#display {
+  font-size: 3em;
+  color: #e74c3c;
+  margin: 20px 0;
+  border: 4px solid #e74c3c;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #ecf0f1;
+}
+
+.control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+  margin: 5px; /* Added margin to space out buttons */
+  flex: 1 1 45%; 
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #1f5981;
+  transform: translateY(1px);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  background-color: #2ecc71;
+  color: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+li:hover {
+  background-color: #27ae60;
+}
+
+.countdown-timer, .time-alert {
+  margin-top: 20px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+input[type="number"]:focus {
+  border-color: #2980b9;
+  outline: none;
+}
+
+.alert {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #e74c3c; /* Red background for alert */
+  display: none; /* Hidden by default */
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .watch-container {
+      width: 90%;
+  }
+
+  #display {
+      font-size: 2.5em;
+  }
+}

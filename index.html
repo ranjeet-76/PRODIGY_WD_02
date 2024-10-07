@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="watch2.css">
+</head>
+<body>
+  <div class="watch-container">
+    <h1>Stopwatch</h1>
+    <div id="display">00:00:00</div>
+    <div class="control">
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+      <button id="lap">Lap</button>
+      <!-- <button id="split">Split</button> -->
+      <button id="download-csv">Download CSV</button>
+    </div>
+    <ul id="laps"></ul>
+    
+    <!-- Countdown Timer -->
+    <div class="countdown-timer">
+      <input type="number" id="countdown" placeholder="Enter seconds">
+      <button id="start-countdown">Start Countdown</button>
+      <button id="pause-countdown">Pause Countdown</button>
+    </div>
+    
+    <!-- Time Alert -->
+    <div class="time-alert">
+      <input type="number" id="alert-time" placeholder="Alert at (seconds)">
+      <button id="set-alert">Set Alert</button>
+    </div>
+
+    <!-- Alert Display -->
+    <div id="alert-message" class="alert"></div>
+  </div>
+  
+  <script src="watch.js"></script>
+</body>
+</html>
